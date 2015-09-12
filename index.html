@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Calculadora Horas/Minutos Decimais</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="img/note.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/calculadora.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+
+</head>
+
+<body onload="document.calcHor.hora.focus();">
+
+	<header></header>
+
+	<!-- horário de verão -->
+	<aside>
+		<h2>Horário de Verão</h2>
+		<p>Início: noite de sábado 17/10/2015</p>
+		<p>Fim: noite de sábado 20/02/2016</p>
+	</aside>
+	<!-- horário de verão -->
+
+
+	<div class="text" id="text1">Conversor de Hora para Decimal</div>
+    <div class="text" id="text2">Digite o valor no formato HH:MM!</div>
+
+    <div id="in" class="style-2">
+        <form name="calcHor">
+        	<!-- <input type="text" name="hora" onkeyup="mascHora(this);" maxlength="5" /> -->
+			<input type="text" name="hora" onKeyPress="return(ConsisteNumerico('5',this,event))" onkeyup="mascHora(this);" maxlength="5" />
+		</form>
+    </div>
+
+	<section>
+		<article>
+			Valor HH:DD
+			<p class="" id="horaDecimal"></p>
+		</article>
+		<article>
+			Valor MM
+			<p class="" id="horaMinuto"></p>
+		</article>
+	</section>
+
+    <footer class="footer">
+      <div class="container">
+		<a href="http://www.igorcamargo.com.br" target="_blank" >
+			<img src="img/logo.png" alt="IFC" >
+		</a>
+      </div>
+    </footer>
+
+</body>
+</html>
