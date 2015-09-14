@@ -99,7 +99,6 @@ article{
 	margin-top: 5%;
 }
 
-/* --- */
 footer {
 	z-index: 5;
 	position: fixed;
@@ -110,21 +109,18 @@ footer {
 }
 
 footer a:link, a:visited {
-	text-decoration: none;
-	color: #969696;
+	-webkit-filter: grayscale(1);
+    filter: grayscale(1);
 	}
 footer a:hover {
-	text-decoration: none; 
-	color: #000;
+	-webkit-filter: grayscale(0);
+    filter: grayscale(0);
 	}
-footer a:active {
-	text-decoration: none
-	}
+
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
 @media screen and (max-width: 1200px) {
 	.text{
 		width: 400px;
