@@ -1,6 +1,7 @@
 //tam = Tamanho do campo
 //fld = input
 //e = evento
+// chamada onKeyPress="return(ConsisteNumerico('5',this,event))"
 function ConsisteNumerico(tam, fld, e) {
     var key = '';
     var i = 0;
