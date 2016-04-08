@@ -145,15 +145,30 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+	header { font-size: 1.1em; }
+	header div {
+		margin: 1.1em 0 0 0.1em;
+	}
+
 	aside {
 		position: relative;
 		margin: 30px auto;
 		border-radius: 0px 0px 20px 20px;
-	    padding: 10px; 
+		padding: 10px;
+		text-align: center;
 	}
 }
 
 @media screen and (max-width: 400px) {
+	header { font-size: 0.825em; }
+	header div {
+		margin: 1.7em 0 0 0.1em;
+	}
+	aside {
+		width: 230px;
+		height: 150px;
+		font-size: 15px;
+	}
 	.text{
 		width: 250px;
 		margin: 50px auto;
